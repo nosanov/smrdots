@@ -3,11 +3,11 @@
     <Header />
     <GalleryArea />
     <h1 v-bind:title="message">{{message}}</h1>
-    <button v-on:click="reverseMessage">Reverse Message</button>
+    <br>
+    <button v-on:click="reverseMessage">Reverse Message</button><br>
     <span v-if="seen">Visible</span>
     <ol>
       <TodoItem v-bind:todos="todos" />
-      <!-- <li v-for="todo in todos" v-bind:key="todo.text">{{todo.text}}</li> -->
     </ol>
     <input type="text" v-model="message">
     <Lorem />
